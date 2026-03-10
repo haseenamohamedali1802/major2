@@ -6,7 +6,7 @@ import axios from "axios";
 import Loader from "../Loader";
 import Message from "../Message";
 
-const ENDPOINT = 'http://localhost:5000';
+const ENDPOINT = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 let socket;
 
 function Chat() {
